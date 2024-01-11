@@ -1,0 +1,158 @@
+:root {
+    --background: #0C090A;
+    --basecolor: #242124;
+    --input-color: #ccccff;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-size: auto;
+    background-color: var(--background);
+    font-family: 'Trebuchet MS', sans-serif;
+    /* or use Palatino Linotype */
+    /* font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif; */
+    /* or use Tahoma */
+    /* font-family: 'Tahoma', sans-serif; */
+    /* or use Geneva */
+    /* font-family: 'Geneva', sans-serif; */
+    /* or use Trebuchet MS */
+    /* font-family: 'Trebuchet MS', sans-serif; */
+    /* or use Lucida Sans Unicode */
+    /* font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif; */
+    /* or use Gill Sans */
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif; */
+    /* or use Franklin Gothic Medium */
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 80%;
+    height: 80vh;
+    background-color: var(--basecolor);
+}
+
+.menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 7.5%;
+    height: 100%;
+}
+
+.menu-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.menu-top-content{
+    color: var(--input-color);
+    cursor: pointer;
+}
+
+.menu-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    user-select: none;
+}
+
+.menu-icons-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.menu-center > .menu-icons-container > svg{
+    cursor: pointer;
+    color: var(--background);
+    margin: 15px;
+}
+
+.menu-center > .menu-icons-container > .menu-icons-title{
+    display: none;
+    position: absolute;
+    color: var(--basecolor);
+    background-color: var(--background);
+    padding: 5px 10px;
+    border-radius: 10px;
+    left: 120%;
+    z-index: 3;
+}
+
+.menu-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.menu-bottom > .menu-icons-container > svg {
+    cursor: pointer;
+    color: var(--input-color);
+}
+
+.menu-bottom > .menu-icons-container > .menu-icons-title {
+    position: absolute;
+    color: var(--basecolor);
+    background-color: var(--background);
+    padding: 5px 10px;
+    border-radius: 10px;
+    left: 200%;
+    z-index: 3;
+}
+
+
+
+.picture-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 32.5%;
+    height: 110%;
+    background-color: var(--input-color);
+    box-shadow: 10px 0 15px -10px var(--background), -10px 0 15px -10px var(--background);
+    z-index: 2;
+}
+
+.content-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    font-size: 35px;
+    font-weight: bold;
+}
+
