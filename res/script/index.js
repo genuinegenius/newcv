@@ -77,8 +77,29 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem('cv-menu-options', JSON.stringify(data));
             menuOptionsLocalStorage();
         }
+        if(e.target.id === "menu-option-download"){
+            
+        }
     });
 
+    /*let mouseHoverArr = ["menu-icons-home", "menu-icons-message", "menu-icons-roadmap", "menu-icons-skills", "menu-icons-download"];
+    let mouseHoverArr2 = ["menu-option-home", "menu-option-message", "menu-option-roadmap", "menu-option-skills", "menu-option-download"];
 
+    // Add a mouseover event listener
+    document.addEventListener('mouseover', (e) => {
+        let elemId = e.target.id;
+
+        
+
+        if(elemId){
+            console.log(firstPart)
+        }
+    });
+
+    // Add a mouseout event listener
+    document.addEventListener('mouseout', (e) => {
+        
+    });*/
+    
 
 });

@@ -87,23 +87,25 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    margin: 15px 0;
 }
 
 .menu-center > .menu-icons-container > svg{
     cursor: pointer;
     color: var(--background);
-    margin: 15px;
 }
 
-.menu-center > .menu-icons-container > .menu-icons-title{
-    display: none;
+.menu-icons-title{
+    opacity: 0;
+    display: flex;
     position: absolute;
-    color: var(--basecolor);
+    color: var(--input-color);
     background-color: var(--background);
     padding: 5px 10px;
     border-radius: 10px;
-    left: 120%;
+    left: 200%;
     z-index: 3;
+    transition: opacity 0.25s ease-in-out;
 }
 
 .menu-bottom{
@@ -121,15 +123,8 @@ body{
     color: var(--input-color);
 }
 
-.menu-bottom > .menu-icons-container > .menu-icons-title {
-    display: none;
-    position: absolute;
-    color: var(--basecolor);
-    background-color: var(--background);
-    padding: 5px 10px;
-    border-radius: 10px;
-    left: 200%;
-    z-index: 3;
+.menu-icons-container > svg:hover + .menu-icons-title{
+    opacity: 1;
 }
 
 
