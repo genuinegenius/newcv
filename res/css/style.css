@@ -155,3 +155,68 @@ body{
 .content-home, .content-message, .content-roadmap, .content-skills{
     display: none;
 }
+
+.project-page-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 3;
+}
+
+.project-go-back{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 15%;
+    height: auto;
+}
+
+.project-go-back > i{
+    margin-right: 25px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: var(--background);
+    color: var(--input-color);
+    padding: 15px 16px;
+    cursor: pointer;
+}
+
+.project-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 85%;
+    height: auto;
+}
+
+.project-title-button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-weight: bold;
+    padding: 35px calc(5% - 50px);
+    width: calc(70% + 50px);
+    height: auto;
+    background-color: var(--background);
+    color: var(--input-color);
+    border-radius: 20px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.project-title-button > i{
+    padding-right: 10px;
+}
+
+.project-content{
+    width: 60%;
+    padding: 25px 25px;
+    background-color: var(--basecolor);
+}
