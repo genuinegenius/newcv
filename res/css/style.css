@@ -186,6 +186,10 @@ body{
     cursor: pointer;
 }
 
+.project-go-back > i:hover{
+    background-color: var(--basecolor);
+}
+
 .project-page{
     display: flex;
     align-items: center;
